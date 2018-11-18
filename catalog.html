@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="page-header"><a class="page-header__logo" href="index.html"><img class="page-header__img" src="img/logo.svg" alt="Логотип в хедере" width="150" height="60" /></a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="#">Информация</a></li>
+            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="#">Фото и видео</a></li>
+            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="#">Карта штата</a></li>
+            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="page-inner">
+        <section class="hotels">
+          <h2 class="visually-hidden">(class=`${className}__caption`)=namePage</h2>
+          <ul class="hotels__list">
+            <li class="hotels__item hotel"><a class="hotel__link hotel__link--img" href="hotel-item.html"><img class="hotel__img" src="img/amara-resort-spa.jpg" alt="Amara Resort &amp; Spa" width="135" height="90" /></a>
+              <div class="hotel__info">
+                <a class="hotel__link" href="hotel-item.html">
+                  <h3 class="hotel__name">Amara Resort &amp; Spa</h3>
+                </a>
+                <div class="hotel__row">
+                  <span class="hotel__type">Гостиница</span>
+                  <span class="hotel__price">От 4000 р.</span>
+                </div>
+                <div class="hotel__row">
+                  <a class="hotel__btn hotel__btn--more-info" href="hotel-item.html">Подробнее</a>
+                  <a class="hotel__btn hotel__btn--booking" href="hotel-item.html">Забронировать</a>
+                </div>
+              </div>
+              <div class="hotel__rating">
+                <div class="hotel__stars">
+                  <span class="hotel__star"></span>
+                  <span class="hotel__star"></span>
+                  <span class="hotel__star"></span>
+                  <span class="hotel__star"></span>
+                </div>
+                <div class="hotel__grade">Рейтинг 8,5</div>
+              </div>
+            </li>
+            <li class="hotels__item hotel">
+              <a class="hotel__link hotel__link--img" href="hotel-item.html">
+                <img class="hotel__img" src="img/desert-quail-inn.jpg" alt="Desert Quail Inn" width="135" height="90" />
+              </a>
+              <div class="hotel__info">
+                <a class="hotel__link" href="hotel-item.html">
+                  <h3 class="hotel__name">Desert Quail Inn</h3>
+                </a>
+                <div class="hotel__row">
+                  <span class="hotel__type">Мотель</span>
+                  <span class="hotel__price">От 3000 р.</span>
+                </div>
+                <div class="hotel__row">
+                  <a class="hotel__btn hotel__btn--more-info" href="hotel-item.html">Подробнее</a>
+                  <a class="hotel__btn hotel__btn--booking" href="hotel-item.html">Забронировать</a>
+                </div>
+              </div>
+              <div class="hotel__rating">
+                <div class="hotel__stars">
+                  <span class="hotel__star"></span>
+                  <span class="hotel__star"></span>
+                  <span class="hotel__star"></span>
+                </div>
+                <div class="hotel__grade">Рейтинг 8,2</div>
+              </div>
+            </li>
+            <li class="hotels__item hotel">
+              <a class="hotel__link hotel__link--img" href="hotel-item.html">
+                <img class="hotel__img" src="img/villas-poco-diablo.jpg" alt="Villas at Poco Diablo" width="135" height="90" />
+              </a>
+              <div class="hotel__info">
+                <a class="hotel__link" href="hotel-item.html">
+                  <h3 class="hotel__name">Villas at Poco Diablo</h3>
+                </a>
+                <div class="hotel__row">
+                  <span class="hotel__type">Апартаменты</span>
+                  <span class="hotel__price">От 2000 р.</span>
+                </div>
+                <div class="hotel__row">
+                  <a class="hotel__btn hotel__btn--more-info" href="hotel-item.html">Подробнее</a>
+                  <a class="hotel__btn hotel__btn--booking" href="hotel-item.html">Забронировать</a>
+                </div>
+              </div>
+              <div class="hotel__rating">
+                <div class="hotel__stars">
+                  <span class="hotel__star"></span>
+                  <span class="hotel__star"></span>
+                </div>
+                <div class="hotel__grade">Рейтинг 8,2</div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <p class="text-hashtag">#VisitSedona</p>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="https://twitter.com">
+              <span class="visually-hidden">Twitter</span>
+              <img class="visually-hidden__icon" src="http://placehold.it/46x48" alt="Twitter" width="46" height="48" />
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://facebook.com">
+              <span class="visually-hidden">Facebook</span>
+              <img class="visually-hidden__icon" src="http://placehold.it/46x48" alt="Facebook" width="46" height="48" />
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://youtube.com">
+              <span class="visually-hidden">Youtube</span>
+              <img class="visually-hidden__icon" src="http://placehold.it/46x48" alt="Youtube" width="46" height="48" />
+            </a>
+          </li>
+        </ul>
+        <div class="copyright">Website by
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img class="copyright__img" src="img/logo-htmlacademy.svg" width="151" height="51" alt="HtmlAcademy">
+          </a>
+        </div>
+      </footer>
+  </div>
+</body>
+</html>
