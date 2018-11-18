@@ -5,8 +5,64 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <div class="container">
+      <header class="page-header">
+        <div class="page-header__logo"><img class="page-header__img" src="img/logo.svg" alt="Логотип в хедере" width="150" height="60" /></div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Карта штата</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="page-main">
+        <h1 class="visually-hidden">Welcome to Sedona!</h1>
+        <section class="promo">
+          <h2 class="visually-hidden">Промо-блок</h2>
+          <div class="promo__back">
+            <img class="promo__img" src="img/promo-back.jpg" alt="Sedona" width="1200" height="508">
+          </div>
+          <p class="promo__text">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="promo__small-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </section>
+        <section class="search-box">
+          <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+          <p class="search-box__eye-catching-text">Заинтересовались?</p>
+          <p class="search-box__small-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="search-box__link" href="search-form.html">Поиск гостиницы в Седоне</a>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <p class="text-hashtag">#VisitSedona</p>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="https://twitter.com">
+              <span class="visually-hidden">Twitter</span>
+              <img class="visually-hidden__icon" src="http://placehold.it/46x48" alt="Twitter" width="46" height="48" />
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://facebook.com">
+              <span class="visually-hidden">Facebook</span>
+              <img class="visually-hidden__icon" src="http://placehold.it/46x48" alt="Facebook" width="46" height="48" />
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://youtube.com">
+              <span class="visually-hidden">Youtube</span>
+              <img class="visually-hidden__icon" src="http://placehold.it/46x48" alt="Youtube" width="46" height="48" />
+            </a>
+          </li>
+        </ul>
+        <div class="copyright">Website by
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img class="copyright__img" src="img/logo-htmlacademy.svg" width="151" height="51" alt="HtmlAcademy">
+          </a>
+        </div>
+      </footer>
+  </div>
 
   </body>
 </html>
