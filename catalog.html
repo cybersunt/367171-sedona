@@ -19,73 +19,86 @@
       </header>
       <main class="page-inner">
         <section class="catalog-filter">
-        <h2 class="visually-hidden">Фильтр каталога</h2>
-        <form class="filter" method="get" action="#">
-          <div class="filter__column">
+          <h2 class="visually-hidden">Фильтр каталога</h2>
+          <form class="filter" method="get" action="#">
+            <div class="filter__column">
+              <fieldset class="filter__fieldset">
+                <legend class="filter__title">Инфраструктура:</legend>
+                <div class="filter__field">
+                  <input class="filter__checkbox" id="pool" name="pool" type="checkbox" checked="" />
+                  <label class="filter__label" for="pool" onmousedown="return false" tabindex="0">Бассейн</label>
+                </div>
+                <div class="filter__field">
+                  <input class="filter__checkbox" id="parking" name="parking" type="checkbox" />
+                  <label class="filter__label" for="parking" onmousedown="return false" tabindex="0">Парковка</label>
+                </div>
+                <div class="filter__field">
+                  <input class="filter__checkbox" id="wifi" name="wifi" type="checkbox" disabled="" />
+                  <label class="filter__label" for="wifi" onmousedown="return false" tabindex="0">Wi-Fi</label>
+                </div>
+              </fieldset>
+              <fieldset class="filter__fieldset">
+                <legend class="filter__title">Тип жилья:</legend>
+                <div class="filter__field">
+                  <input class="filter__checkbox" id="hotel" name="hotel" type="checkbox" checked="" />
+                  <label class="filter__label" for="hotel" onmousedown="return false" tabindex="0">Гостиница</label>
+                </div>
+                <div class="filter__field">
+                  <input class="filter__checkbox" id="motel" name="motel" type="checkbox" checked="" />
+                  <label class="filter__label" for="motel" onmousedown="return false" tabindex="0">Мотель</label>
+                </div>
+                <div class="filter__field">
+                  <input class="filter__checkbox" id="apartments" name="apartments" type="checkbox" checked="" disabled="" />
+                  <label class="filter__label" for="apartments" onmousedown="return false" tabindex="0">Апартаменты</label>
+                </div>
+              </fieldset>
+            </div>
             <fieldset class="filter__fieldset">
-              <legend class="filter__title">Инфраструктура:</legend>
-              <div class="filter__field">
-                <input class="filter__checkbox" id="pool" name="pool" type="checkbox" checked="" />
-                <label class="filter__label" for="pool" onmousedown="return false" tabindex="0">Бассейн</label>
+              <legend class="filter__title">Стоимость в сутки (Р):</legend>
+              <label class="visually-hidden" for="price">Шкала стоимости
+                <input id="price" type="range" name="price" min="0" max="3000" step="200" />
+              </label>
+              <div class="filter-price__range-controls">
+                <div class="filter-price__scale">
+                  <div class="filter-price__bar"></div>
+                </div>
+                <button class="filter-price__toggle filter-price__toggle--toggle-min"></button>
+                <button class="filter-price__toggle filter-price__toggle--toggle-max"></button>
               </div>
-              <div class="filter__field">
-                <input class="filter__checkbox" id="parking" name="parking" type="checkbox" />
-                <label class="filter__label" for="parking" onmousedown="return false" tabindex="0">Парковка</label>
-              </div>
-              <div class="filter__field">
-                <input class="filter__checkbox" id="wifi" name="wifi" type="checkbox" disabled="" />
-                <label class="filter__label" for="wifi" onmousedown="return false" tabindex="0">Wi-Fi</label>
+              <div class="filter-price__controls">
+                <label class="filter-price__price filter-price__price--min" for="min-price">от
+                  <input class="filter-price__input" id="min-price" type="number" value="0" min="0" />
+                </label>
+                <label class="filter-price__price filter-price__price--max" for="max-price">до
+                  <input class="filter-price__input" id="max-price" type="number" value="3000" max="3000" />
+                </label>
               </div>
             </fieldset>
-            <fieldset class="filter__fieldset">
-              <legend class="filter__title">Тип жилья:</legend>
-              <div class="filter__field">
-                <input class="filter__checkbox" id="hotel" name="hotel" type="checkbox" checked="" />
-                <label class="filter__label" for="hotel" onmousedown="return false" tabindex="0">Гостиница</label>
-              </div>
-              <div class="filter__field">
-                <input class="filter__checkbox" id="motel" name="motel" type="checkbox" checked="" />
-                <label class="filter__label" for="motel" onmousedown="return false" tabindex="0">Мотель</label>
-              </div>
-              <div class="filter__field">
-                <input class="filter__checkbox" id="apartments" name="apartments" type="checkbox" checked="" disabled="" />
-                <label class="filter__label" for="apartments" onmousedown="return false" tabindex="0">Апартаменты</label>
-              </div>
-            </fieldset>
+            <button class="btn-filter" type="submit">Показать</button>
+          </form>
+        </section>
+        <section class="sort-bar">
+          <h2 class="visually-hidden">Результаты поиска</h2><span class="sort-bar__counter">Найдено: 3</span><span class="sort-bar__name">Сортировка:</span>
+          <ul class="sort-bar__sorting-list">
+            <li class="sort-bar__sorting-item">
+              <a class="sort-bar__sorting-link sort-bar__sorting-current" href="#">По цене</a>
+            </li>
+            <li class="sort-bar__sorting-item">
+              <a class="sort-bar__sorting-link" href="#">По типу</a>
+            </li>
+            <li class="sort-bar__sorting-item">
+              <a class="sort-bar__sorting-link" href="#">По рейтингу</a>
+            </li>
+          </ul>
+          <div class="sort-bar__buttons">
+            <a class="sort-bar__button sort-bar__button--descending" href="#">
+              <span class="visually-hidden">По убыванию</span>
+            </a>
+            <a class="sort-bar__button sort-bar__button--ascending sort-bar__button--current" href="#">
+              <span class="visually-hidden">По возрастанию</span>
+            </a>
           </div>
-          <fieldset class="filter__fieldset">
-            <legend class="filter__title">Стоимость в сутки (Р):</legend>
-            <label class="visually-hidden" for="price">Шкала стоимости
-              <input id="price" type="range" name="price" min="0" max="3000" step="200" />
-            </label>
-            <div class="filter-price__range-controls">
-              <div class="filter-price__scale">
-                <div class="filter-price__bar"></div>
-              </div>
-              <button class="filter-price__toggle filter-price__toggle--toggle-min"></button>
-              <button class="filter-price__toggle filter-price__toggle--toggle-max"></button>
-            </div>
-            <div class="filter-price__controls">
-              <label class="filter-price__price filter-price__price--min" for="min-price">от
-                <input class="filter-price__input" id="min-price" type="number" value="0" min="0" />
-              </label>
-              <label class="filter-price__price filter-price__price--max" for="max-price">до
-                <input class="filter-price__input" id="max-price" type="number" value="3000" max="3000" />
-              </label>
-            </div>
-          </fieldset>
-          <button class="btn-filter" type="submit">Показать</button>
-        </form>
-      </section>
-      <section class="sort-bar">
-        <h2 class="visually-hidden">Результаты поиска</h2><span class="sort-bar__counter">Найдено: 3</span><span class="sort-bar__name">Сортировка:</span>
-        <ul class="sort-bar__sorting-list">
-          <li class="sort-bar__sorting-item"><a class="sort-bar__sorting-link sort-bar__sorting-current" href="#">По цене</a></li>
-          <li class="sort-bar__sorting-item"><a class="sort-bar__sorting-link" href="#">По типу</a></li>
-          <li class="sort-bar__sorting-item"><a class="sort-bar__sorting-link" href="#">По рейтингу</a></li>
-        </ul>
-        <div class="sort-bar__buttons"><a class="sort-bar__button sort-bar__button--descending" href="#"><span class="visually-hidden">По убыванию</span></a><a class="sort-bar__button sort-bar__button--ascending sort-bar__button--current" href="#"><span class="visually-hidden">По возрастанию</span></a></div>
-      </section>
+        </section>
         <section class="hotels">
           <h2 class="visually-hidden">(class=`${className}__caption`)=namePage</h2>
           <ul class="hotels__list">
