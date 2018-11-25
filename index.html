@@ -87,6 +87,41 @@
           <p class="search-box__eye-catching-text">Заинтересовались?</p>
           <p class="search-box__small-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="search-box__link" href="search-form.html">Поиск гостиницы в Седоне</a>
+
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="search-form__content">
+              <div class="search-form__row">
+                <label class="search-form__label" for="date-arrival">Дата заезда:</label>
+                <button class="search-form__counter search-form__counter--minus" type="button"></button>
+                <input class="search-form__field" id="date-arrival" value="24 апреля 2017" type="text" name="date-arrival">
+                <button class="search-form__counter search-form__counter--plus" type="button"></button>
+              </div>
+              <div class="search-form__row">
+                <label class="search-form__label" for="date-departure">Дата выезда:</label>
+                <button class="search-form__counter search-form__counter--minus" type="button"></button>
+                <input class="search-form__field" id="date-departure" value="4 июля 2017" type="text" name="date-departure">
+                <button class="search-form__counter search-form__counter--plus" type="button"></button>
+              </div>
+              <div class="search-form__row">
+                <label class="search-form__label" for="adults">Взрослые:</label>
+                <button class="search-form__counter search-form__counter--minus" type="button"></button>
+                <input class="search-form__field" id="adults" value="2" type="text" name="adults">
+                <button class="search-form__counter search-form__counter--plus" type="button"></button>
+              </div>
+              <div class="search-form__row">
+                <label class="search-form__label" for="children">Дети:</label>
+                <button class="search-form__counter search-form__counter--minus" type="button"></button>
+                <input class="search-form__field" id="children" value="0" type="text" name="children">
+                <button class="search-form__counter search-form__counter--plus" type="button"></button>
+              </div>
+            </div>
+            <button class="btn search-form" type="submit">Найти</button>
+          </form>
+          <div class="map">
+            <div class="contacts__map" id="map">
+              <img class="contacts__map-img" src="img/map.jpg" alt="Поиск гостиниц в Седоне">
+            </div>
+          </div>
         </section>
       </main>
       <footer class="page-footer">
