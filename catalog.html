@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
@@ -12,10 +13,10 @@
         ></a>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="#">Информация</a></li>
-            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="#">Фото и видео</a></li>
-            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="#">Карта штата</a></li>
-            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="catalog.html">Гостиницы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Карта штата</a></li>
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--current" href="catalog.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -76,14 +77,14 @@
                 </label>
               </div>
             </fieldset>
-            <button class="btn-filter" type="submit">Показать</button>
+            <button class="filter__btn" type="submit">Показать</button>
           </form>
         </section>
         <section class="sort-bar">
           <h2 class="visually-hidden">Результаты поиска</h2><span class="sort-bar__counter">Найдено: 3</span><span class="sort-bar__name">Сортировка:</span>
           <ul class="sort-bar__sorting-list">
             <li class="sort-bar__sorting-item">
-              <a class="sort-bar__sorting-link sort-bar__sorting-current" href="#">По цене</a>
+              <a class="sort-bar__sorting-link sort-bar__sorting-link--active" href="#">По цене</a>
             </li>
             <li class="sort-bar__sorting-item">
               <a class="sort-bar__sorting-link" href="#">По типу</a>
