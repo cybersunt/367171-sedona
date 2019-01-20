@@ -769,7 +769,7 @@ body {
   cursor: pointer;
 }
 .filter-price__toggle:hover {
-  background: #1c4f80;
+  transform: scale(1.2);
 }
 .filter-price__toggle--min {
   left: 0;
