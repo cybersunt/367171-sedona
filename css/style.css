@@ -689,19 +689,18 @@ body {
   background-position: 0 0;
 }
 .filter__btn {
-  text-align: center;
-  background-color: #ffffff;
+  display: block;
+  width: 137px;
+  margin-left: 85px;
+  padding: 6px 33px 6px 35px;
   border-color: #ffffff;
   background-color: transparent;
-  display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  border: 2px solid #ffffff;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+  text-align: center;
   cursor: pointer;
   outline: none;
 }
@@ -759,7 +758,7 @@ body {
   margin-bottom: 32px;
 }
 .filter-price__bar {
-  width: 80%;
+  width: 79%;
   height: 2px;
   background: #ffffff;
 }
@@ -798,7 +797,7 @@ body {
   cursor: pointer;
 }
 .filter-price__input {
-  width: 50px;
+  width: 62px;
   height: 30px;
   margin: 0;
   color: inherit;
