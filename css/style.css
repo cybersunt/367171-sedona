@@ -191,7 +191,7 @@ body {
   padding-top: 0;
   padding-left: 72px;
   padding-right: 72px;
-  padding-bottom: 52px;
+  padding-bottom: 50px;
   text-align: center;
 }
 .promo__back {
@@ -257,16 +257,16 @@ body {
 }
 .reasons__column {
   width: 400px;
-  padding-left: 49px;
+  padding-left: 48px;
   padding-right: 49px;
   padding-top: 45px;
   padding-bottom: 58px;
   background: #81b3d2;
 }
 .reasons__caption {
-  width: 151px;
+  width: 155px;
   margin-top: 0;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
   margin-left: auto;
   margin-right: auto;
   font-size: 21px;
@@ -275,7 +275,7 @@ body {
 }
 .reasons__number {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 .reasons__text {
   margin: 0;
@@ -289,8 +289,8 @@ body {
 .reasons__item--padding {
   padding-left: 49px;
   padding-right: 49px;
-  padding-top: 50px;
-  padding-bottom: 65px;
+  padding-top: 45px;
+  padding-bottom: 60px;
 }
 .reasons__item--blue {
   width: 100%;
@@ -302,6 +302,12 @@ body {
 .reasons__item--blue .reasons__caption {
   color: #ffffff;
 }
+
+.reasons__item--padding .reasons__text {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .reasons__item--order {
   -webkit-box-ordinal-group: -1;
       -ms-flex-order: -2;
@@ -383,7 +389,7 @@ body {
 }
 .search-box {
   padding: 0 72px;
-  padding-top: 57px;
+  padding-top: 49px;
   text-align: center;
   position: relative;
 }
@@ -397,7 +403,7 @@ body {
 .search-box__small-text {
   padding: 0 304px;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 46px;
   line-height: 24px;
   color: #333333;
 }
@@ -426,15 +432,10 @@ body {
 .search-box__link:focus,
 .search-box__link:hover {
   color: #ffffff;
-}
-.search-box__link:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-.search-box__link:focus,
-.search-box__link:hover {
   background-color: #604e43;
 }
 .search-box__link:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 .map {
@@ -449,10 +450,10 @@ body {
   line-height: 26px;
   font-weight: bold;
   width: 568px;
-  top: 277px;
+  top: 290px;
   left: 50%;
   margin-left: -284px;
-  padding: 55px;
+  padding: 56px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
           box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
@@ -506,17 +507,13 @@ body {
 .search-form__btn:focus,
 .search-form__btn:hover {
   color: #ffffff;
-}
-.search-form__btn:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-.search-form__btn:focus,
-.search-form__btn:hover {
   background-color: #669ec0;
 }
 .search-form__btn:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
+
 .search-form__btn-calendar {
   width: 21px;
   height: 22px;
@@ -599,10 +596,10 @@ body {
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 5px;
+  padding-top: 3px;
   padding-bottom: 5px;
-  padding-left: 13px;
-  padding-right: 29px;
+  padding-left: 9px;
+  padding-right: 32px;
   background-color: #f2f2f2;
   border: 2px solid transparent;
 }
@@ -812,8 +809,8 @@ body {
 }
 .sort-bar {
   padding: 0 72px;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 31px;
+  padding-bottom: 29px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -828,7 +825,7 @@ body {
 .sort-bar__name {
   font-size: 12px;
   line-height: 18px;
-  margin-right: 35px;
+  margin-right: 39px;
   padding-top: 4px;
 }
 .sort-bar__sorting-list {
@@ -843,7 +840,7 @@ body {
           align-items: center;
 }
 .sort-bar__sorting-item {
-  margin-right: 30px;
+  margin-right: 33px;
 }
 .sort-bar__sorting-link {
   font-size: 12px;
@@ -867,6 +864,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  padding-top: 4px;
   text-align: right;
 }
 
@@ -875,7 +873,7 @@ body {
 }
 
 .sort-bar__button:first-child {
-  margin-right: 5px;
+  margin-right: 9px;
 }
 .sort-bar__button svg {
   fill: #cacaca;
@@ -896,7 +894,7 @@ body {
   margin: 0;
 }
 .hotel {
-  padding-top: 30px;
+  padding-top: 26px;
   padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -908,12 +906,12 @@ body {
 .hotel__link {
   display: inline-block;
   vertical-align: center;
-  margin-bottom: 5px;
   outline: none;
 }
 .hotel__link--img {
   margin-right: 30px;
   margin-bottom: 0;
+  margin-top: 4px;
 }
 .hotel__img {
   display: block;
@@ -936,13 +934,13 @@ body {
 .hotel__btn {
   display: inline-block;
   vertical-align: center;
-  margin-top: 8px;
-  padding: 5px 10px 4px;
+  margin-top: 13px;
+  padding: 3px 17px 3px;
   outline: none;
 }
 
 .hotel__btn:not(:last-child) {
-   margin-right: 10px;
+   margin-right: 3px;
 }
 .hotel__btn--more-info {
   color: #ffffff;
@@ -953,15 +951,10 @@ body {
 .hotel__btn--more-info:focus,
 .hotel__btn--more-info:hover {
   color: #ffffff;
-}
-.hotel__btn--more-info:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-.hotel__btn--more-info:focus,
-.hotel__btn--more-info:hover {
   background-color: #669ec0;
 }
 .hotel__btn--more-info:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 .hotel__btn--booking {
@@ -973,15 +966,10 @@ body {
 .hotel__btn--booking:focus,
 .hotel__btn--booking:hover {
   color: #ffffff;
-}
-.hotel__btn--booking:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-.hotel__btn--booking:focus,
-.hotel__btn--booking:hover {
   background-color: #604e43;
 }
 .hotel__btn--booking:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 .hotel__rating {
@@ -1016,6 +1004,10 @@ body {
   height: 18px;
   position: relative;
 }
+
+.hotel__star:not(:first-child) {
+  margin-left: 6px;
+}
 .hotel__star::before {
   content: '';
   width: 18px;
@@ -1034,12 +1026,13 @@ body {
 .hotel__type {
   display: inline-block;
   vertical-align: center;
-  width: 97px;
-  margin-right: 10px;
+  width: 112px;
+  margin-top: 7px;
 }
 .hotel__price {
   display: inline-block;
   vertical-align: center;
+  margin-top: 7px;
   width: 142px;
 }
 .page-footer {
@@ -1052,9 +1045,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 72px;
   padding-top: 36px;
-  padding-bottom: 36px;
+  padding-bottom: 38px;
+  padding-left: 132px;
+  padding-right: 104px;
   background: #ffffff;
   opacity: 0.9;
 }
@@ -1074,7 +1068,7 @@ body {
 }
 .text-hashtag {
   max-width: 400px;
-  margin: 0;
+  margin: 0 27px 0 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -1095,7 +1089,7 @@ body {
           flex: 1 0 ;
 }
 .social__item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 7px;
 }
 .social__link {
   width: 46px;
