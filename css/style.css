@@ -698,7 +698,8 @@ body {
   padding: 6px 33px 6px 35px;
   border-color: #ffffff;
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 2px ыolid #ffffff;
+  border-radius: 2px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -826,6 +827,7 @@ body {
   line-height: 26px;
   font-weight: bold;
   margin-right: 45px;
+  width: 144px;
 }
 .sort-bar__name {
   font-size: 12px;
@@ -840,6 +842,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -866,6 +870,9 @@ body {
   border: none;
 }
 .sort-bar__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -890,9 +897,7 @@ body {
 .sort-bar__button--current svg {
   fill: #81b3d2;
 }
-.hotels {
-  padding: 0 72px;
-}
+
 .hotels__list {
   list-style: none;
   padding: 0;
@@ -901,6 +906,8 @@ body {
 .hotel {
   padding-top: 26px;
   padding-bottom: 30px;
+  padding-left: 72px;
+  padding-right: 72px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -941,6 +948,7 @@ body {
   vertical-align: center;
   margin-top: 13px;
   padding: 3px 17px 3px;
+  font-weight: 700;
   outline: none;
 }
 
@@ -1082,7 +1090,7 @@ body {
 .social {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 1px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1092,6 +1100,8 @@ body {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 ;
   flex: 1 0 ;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .social__item:not(:last-child) {
   margin-right: 7px;
