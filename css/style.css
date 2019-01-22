@@ -689,16 +689,16 @@ body {
 .filter__label::before {
   background-image: url('../img/checkbox-off.svg');
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 0;s
 }
 .filter__btn {
   display: block;
   width: 137px;
   margin-left: 85px;
-  padding: 6px 33px 6px 35px;
+  padding: 6px 34px 6px 32px;
   border-color: #ffffff;
   background-color: transparent;
-  border: 2px ыolid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 2px;
   font-size: 14px;
   line-height: 20px;
