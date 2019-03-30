@@ -445,6 +445,38 @@ body {
 .map__img {
   display: block;
 }
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  80% {
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  80% {
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .search-form {
   position: absolute;
   font-size: 14px;
@@ -458,6 +490,10 @@ body {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 .search-form__content {
