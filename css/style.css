@@ -441,9 +441,8 @@ body {
 }
 .map {
   margin: 0 -72px;
-}
-.map__img {
-  display: block;
+  width: 1200px;
+  height: 593px;
 }
 
 @-webkit-keyframes bounce {
@@ -494,6 +493,7 @@ body {
           animation-name: bounce;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
+  z-index: 1;
 }
 
 .search-form__content {
